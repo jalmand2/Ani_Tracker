@@ -1,0 +1,359 @@
+/* --------------------------------- */
+/* Color and Font Selectors */
+:root {
+    --light-bg: #E2D7E4;
+    --light-primary: #D7BECB;
+    --light-secondary: #DDC8D3;
+    --light-highlight: #C8ABBA;
+    --dark-bg: #2B282F;
+    --dark-primary: #403741;
+    --dark-secondary: #503F4C;
+    --dark-highlight: #6D4D60;
+    --text: #843263;
+    --text-hover: #BC4074;
+    --accent-base: #712B50;
+    --accent-default: #BC4074;
+    --accent-highlight: #E05380;
+    --comfy: "Comfortaa";
+}
+
+/* ------------------------------------------------- */
+/* Updates Tabs styling Template */
+body {
+    background-color: var(--dark-bg);
+}
+/* This is the styling for the updates tab */
+.updatesRow {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.column {
+    box-sizing: border-box;
+    background-color: var(--dark-primary);
+    position: relative;
+    width: 600px;
+    border-radius: 10px;
+    height: 400px;
+    margin: 50px;
+    color: var(--text);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.updatesUl {
+    margin: 0px;
+    width: 88%;
+    height: 70%;
+    padding: 10px;
+    background-color: var(--dark-secondary);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: scroll;
+
+}
+.updatesLi {
+    font-size: 30px;
+    list-style-type: none;
+    color: var(--light-primary)
+}
+
+li:hover {
+    color: var(--light-highlight)
+}
+
+/* ---------------------------------------------- */
+/* Login and Sign Up Styling Template */
+
+/* Card Body */
+.card-body {
+    background-color: var(--dark-secondary);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    box-shadow: 12px 12px 12px 1px #2a063f33;
+}
+
+.form-group, p, h5 {
+    color: var(--light-highlight);
+    font-family: var(--comfy);
+}
+#title {
+    background-color: var(--dark-secondary);
+    color: var(--accent-default);
+    font-family: var(--comfy);
+    text-align: center;
+    text-align: center;
+}
+input:hover {
+    background-color: var(--light-bg);
+}
+
+/* Login Card Section */
+/* #log-form {
+    margin-left: 5cm;
+} */
+.row {
+    display: flex;
+    justify-content: center;
+}
+.login-card {
+    margin-top: 30px;
+    border-radius: 5%;
+    border-bottom-left-radius:10%;
+    border-bottom-right-radius: 10%;
+    background-color: var(--dark-secondary);
+    color: var(--accent-default);
+    width: 500px;
+}
+.login-form, .sign-form {
+    padding: 0px;
+    margin-right: 300px;
+}
+#log-btn {
+    font-family: var(--comfy);
+    margin-left: 0.25cm;
+    margin-bottom: 0.15cm;
+    background-color: var(--light-highlight);
+    border-color: var(--light-highlight);
+}
+#log-btn:hover {
+    background-color: var(--accent-highlight);
+    border-color: var(--accent-highlight);
+}
+.login-instead {
+    margin-left: 37px;
+    text-decoration: none;
+    color: var(--light-primary)
+}
+.login-instead:hover {
+    color: var(--dark-bg);
+}
+
+/* Sign Up Card Section */
+/* .sign-form {
+    margin-right: 15cm;
+} */
+.sign-card {
+    margin-top: 30px;
+    border-radius: 5%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background-color: var(--dark-secondary);
+    color: var(--accent-default);
+    width: 500px;
+}
+#signin-btn {
+    font-family: var(--comfy);
+    margin-left: 0.25cm;
+    margin-bottom: 0.15cm;
+    background-color: var(--light-highlight);
+    border-color: var(--light-highlight);
+}
+#signin-btn:hover {
+    background-color: var(--accent-highlight);
+    border-color: var(--accent-highlight);
+}
+.signup-instead {
+    margin-left: 15px;
+    text-decoration: none;
+    color: var(--light-primary)
+}
+.signup-instead:hover {
+    color: var(--dark-bg);
+}
+
+/* ---------------------------------------------- */
+/* This is the styling for the profile tab ------------------*/
+.profileColumn {
+    box-sizing: border-box;
+    background-color: var(--dark-primary);
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    height: 700px;
+    margin: 30px;
+    padding: 0px;
+    font-family: var(--comfy);
+    font-family: var(--comfy);
+    color: var(--text);
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .profileHeading {
+    font-size: 26px;
+} */
+
+.profileRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+.profileUl {
+    margin: 0px;
+    width: 88%;
+    height: 80%;
+    padding: 10px;
+    background-color: var(--dark-secondary);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: scroll;
+}
+.profileHeaders {
+    color: var(--light-primary);
+    background-image: linear-gradient( #322b33, #473743, #322b33);
+    box-shadow: 0px 4px 8px 0  rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3px;
+    height:100.8px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profileWelcome {
+    font-family: var(--comfy);
+    font-family: var(--comfy);
+    color: var(--light-primary);
+    margin-left: 20px;
+}
+/* Navbar Styling ---------------------------------------------------------------------------------------*/
+
+.navbar {
+    background-image: linear-gradient( #322b33, #473743, #322b33);
+    box-shadow: 0px 4px 8px 0  rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navbar-brand, .navbar-toggler, .nav-link, .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    font-family: var(--comfy);
+    font-family: var(--comfy);
+    color: var(--light-primary);
+}
+
+
+/* ------------------------------------------------------------------------------ *//* ------------------------------------------------------------------------------ */
+/* splash page css */
+.splash-body {
+    background-image: url(../images/rain.gif);
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+
+}
+.splashHeader {
+    color: var(--light-primary);
+    background-image: linear-gradient( #322b33, #473743, #322b33);
+    border-radius: 5%;
+    box-shadow: 0px 4px 8px 0  rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.intro-card {
+    border-radius: 5%;
+    margin-bottom: 5px;
+}
+
+.welcome {
+    font-family: var(--comfy);
+    font-family: var(--comfy);
+    color: var(--light-primary);
+}
+#anime-title {
+    font-family: var(--comfy);
+    font-size: 35px;
+}
+.eyes-vec {
+    font-family: var(--comfy);
+    color: var(--accent-default);
+}
+.eyes-vec:hover {
+    color: var(--accent-highlight);
+}
+#log-in, #do-not {
+    font-family: var(--comfy);
+    color: var(--accent-highlight);
+}
+#not-btn, #con-btn {
+    background-color: var(--accent-base);
+}
+#not-btn:hover, #con-btn:hover {
+    background-color: var(--accent-default);
+    border-color: var(--accent-highlight);
+}
+#anime-title {
+    font-family: var(--comfy);
+}
+/* This is the styling for the discover tab */
+/* .discoverColumn {
+    box-sizing: border-box;
+    background-image: linear-gradient( #322b33, #473743, #322b33);
+    box-shadow: 0px 4px 8px 0  rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    width: 600px;
+    height: 200px;
+    min-height: 200px;
+    margin: 50px;
+    color: var(--text);
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.discoverHeading {
+    position: absolute;
+    color: var(--light-secondary);
+    margin-left: 50px;
+    margin-top: 8px;
+
+}
+.discoverRow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.discoverTabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#query {
+    width: 610px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-image: linear-gradient( #322b33, #473743, #322b33);
+    box-shadow: 0px 4px 8px 0  rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+/* Media Queries ----------------------------------------------*/
+
+/* Tablets */
+@media screen and (max-width: 992px) {}
+
+/* Large smartphones */
+@media screen and (max-width: 768px) {
+    .profileRow {
+        flex-wrap: wrap;
+    }
+    .profileColumn {
+        width: 100%;
+    }
+    .profileHeaders {
+        width: 100%;
+    }
+    .login-form, .sign-form {
+        margin-left: 150px;
+        margin-right: 0px;
+    }
+}
+/* Small smartphones */
+@media screen and (max-width: 576px) {
+    
+}

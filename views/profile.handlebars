@@ -1,0 +1,47 @@
+{{> nav}}
+{{!-- Profile Username welcome page --}}
+<div>
+    <h2 class="profileWelcome">Welcome, {{username}}!</h2>
+</div>
+
+{{!-- Status anime tracking list --}}
+<div class="profileRow">
+    <div class="col-lg profileColumn">
+        <h3 class="profileHeaders">Watchlist</h3>
+        <ul class="profileUl">
+            {{#each thisUsersFavs.status}}
+            {{#if thisUsersFavs.planned}}
+            <li class="updatesLi">Test</li>
+            {{/if}}
+            {{/each}}
+    </div>
+    <div class="col-lg profileColumn">
+        <h3 class="profileHeading profileHeaders">Currently Watching</h3>
+        <ul class="profileUl">
+            {{#each thisUsersFavs.status}}
+            {{#if thisUsersFavs.watching}}
+            <li class="updatesLi">Test</li>
+            {{/if}}
+            {{/each}}
+    </div>
+    <div class="col-lg profileColumn">
+        <h3 class="profileHeaders">Completed</h3>
+        <ul class="profileUl">
+            {{#each thisUsersFavs.status}}
+            {{#if thisUsersFavs.completed}}
+            <li class="updatesLi">Test</li>
+            {{/if}}
+            {{/each}}
+    </div>
+    <div class="col-lg profileColumn">
+        <h3 class="profileHeaders">Dropped</h3>
+        <ul class="profileUl">
+            {{#each thisUsersFavs.status}}
+            {{#if thisUsersFavs.dropped}}
+            <li class="updatesLi">Test</li>
+            {{/if}}
+            {{/each}}
+    </div>
+</div>
+
+<script src="./js/profile.js"></script>

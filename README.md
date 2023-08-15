@@ -3,7 +3,7 @@
 
 ## Description 
 
-This project is one of passion! The fire of youth! It allows you to keep track of the anime you are watching!!! Along with helping you keep track of the anime you have watched in the past!
+It allows you to keep track of the anime you are watching!!! Along with helping you keep track of the anime you have watched in the past!
 There is also a way to plan out the anime you want to watch as well!
  
 ## Table of Contents
